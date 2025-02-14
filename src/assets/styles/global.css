@@ -1,26 +1,46 @@
-/* Basic Styles */
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-  }
-  
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  header, footer {
-    background-color: #343a40;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .container {
-    flex: 1;
-    padding: 2rem;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  height: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.container {
+  flex: 1;
+  padding: 2rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+/* Ensure login card takes full width of the container */
+.login-card {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+body, .container, .container-fluid, .app-container {
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,63 @@
+/* Navbar Styling */
+.navbar {
+    background-color: #343a40 !important; /* Dark background */
+    padding: 0.5rem 1.5rem; /* Reduced padding for smaller navbar height */
+    height: 60px; /* Fixed height */
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 1px;
+  }
+  
+  .navbar .navbar-brand:hover {
+    color: #00aaff;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-right: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #00aaff;
+    border-bottom: 2px solid #00aaff; /* Underline effect on hover */
+  }
+  
+  .navbar-nav .nav-link.active {
+    color: #00aaff; /* Active page color */
+    font-weight: 700; /* Bold for active page */
+  }
+  
+  .navbar-nav .nav-link:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #ffffff; /* Toggle icon color */
+  }
+  
+  /* Media Query for Mobile Devices */
+  @media (max-width: 991px) {
+    .navbar-nav .nav-link {
+      font-size: 0.9rem; /* Smaller font size on mobile */
+      margin-right: 15px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .navbar {
+      padding: 0.4rem 1rem; /* Even smaller padding for smaller screens */
+    }
+  
+    .navbar .navbar-brand {
+      font-size: 1.2rem; /* Adjust brand font size */
+    }
+  }
+  
+  
