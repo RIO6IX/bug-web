@@ -1,63 +1,122 @@
-/* Navbar Styling */
-.navbar {
-    background-color: #343a40 !important; /* Dark background */
-    padding: 0.5rem 1.5rem; /* Reduced padding for smaller navbar height */
-    height: 60px; /* Fixed height */
-  }
-  
-  .navbar .navbar-brand {
-    font-size: 1.3rem;
-    font-weight: 600;
+/* Navbar styles */
+.main-navbar {
+    background-color: #212529; /* Dark theme navbar */
+    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #ffffff;
-    letter-spacing: 1px;
-  }
-  
-  .navbar .navbar-brand:hover {
-    color: #00aaff;
-  }
-  
-  .navbar-nav .nav-link {
-    font-size: 1rem;
-    color: #ffffff;
-    margin-right: 20px;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #00aaff;
-    border-bottom: 2px solid #00aaff; /* Underline effect on hover */
-  }
-  
-  .navbar-nav .nav-link.active {
-    color: #00aaff; /* Active page color */
-    font-weight: 700; /* Bold for active page */
-  }
-  
-  .navbar-nav .nav-link:last-child {
-    margin-right: 0;
-  }
-  
-  .navbar-toggler-icon {
-    background-color: #ffffff; /* Toggle icon color */
-  }
-  
-  /* Media Query for Mobile Devices */
-  @media (max-width: 991px) {
-    .navbar-nav .nav-link {
-      font-size: 0.9rem; /* Smaller font size on mobile */
-      margin-right: 15px;
+    text-transform: uppercase;
+}
+
+/* Hide toggle button by default */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.sidebar-nav .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s;
+    text-decoration: none;
+}
+
+.sidebar-nav .nav-link:hover {
+    background-color: #495057;
+}
+
+/* Close button for sidebar */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Profile Dropdown */
+#profile-dropdown {
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Dark Mode Toggle in Dropdown */
+.dark-mode-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px;
+}
+
+/* Dark Mode Toggle in Sidebar */
+.sidebar-darkmode {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .menu-toggle {
+        display: block;
     }
-  }
-  
-  @media (max-width: 575px) {
-    .navbar {
-      padding: 0.4rem 1rem; /* Even smaller padding for smaller screens */
+
+    .navbar-nav {
+        display: none;
     }
-  
-    .navbar .navbar-brand {
-      font-size: 1.2rem; /* Adjust brand font size */
+
+    .main-navbar {
+        justify-content: space-between;
     }
-  }
-  
-  
+}

@@ -1,4 +1,4 @@
-
+import bugBountyService from "../services/bugBountyService";
 function Report() {
     return (
       <div className="container mt-5">

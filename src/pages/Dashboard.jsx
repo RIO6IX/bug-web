@@ -1,3 +1,5 @@
+import bugBountyService from "../services/bugBountyService";
+
 function Dashboard() {
     return (
       <div className="container mt-5">

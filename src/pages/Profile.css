@@ -1,0 +1,132 @@
+/* Profile Page Styles */
+.profile-container {
+    padding: 3rem;
+    background-color: #f8f9fa;
+  }
+  
+  .profile-heading {
+    font-size: 2rem;
+    text-align: center;
+    color: #343a40;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  
+  .profile-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic-col {
+    text-align: center;
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .profile-details {
+    padding-left: 2rem;
+  }
+  
+  .username {
+    font-size: 1.5rem;
+    color: #343a40;
+  }
+  
+  .email {
+    color: #6c757d;
+  }
+  
+  .bio {
+    color: #495057;
+  }
+  
+  .social-links a {
+    margin-right: 10px;
+    color: #343a40;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #007bff;
+  }
+  
+  .edit-profile-btn {
+    margin-top: 1rem;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+  
+  .badges {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .badge {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    cursor: pointer;
+  }
+  
+  .badge:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Account Settings Page Styles */
+  .account-settings-container {
+    padding: 3rem;
+    background-color: #f8f9fa;
+  }
+  
+  .settings-heading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #343a40;
+  }
+  
+  .settings-card {
+    background-color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 2rem;
+  }
+  
+  .save-btn,
+  .cancel-btn {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .save-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .save-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-btn {
+    background-color: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #495057;
+  }
+  
