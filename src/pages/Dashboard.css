@@ -1,0 +1,100 @@
+/* General styles */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .dashboard-heading {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .dashboard-description {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Content container */
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  /* Card styles */
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    width: 22%;
+    min-width: 250px;
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .card-data {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin: 10px 0;
+  }
+  
+  .card-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .card-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Recent Activity styles */
+  .recent-activity {
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .recent-activity h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .recent-activity ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .recent-activity li {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .recent-activity li strong {
+    color: #333;
+  }
+  
