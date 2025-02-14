@@ -1,4 +1,4 @@
-export function SignupForm() {
+function SignupForm() {
     return (
       <div className="container mt-5">
         <h2>Sign Up</h2>
@@ -11,3 +11,5 @@ export function SignupForm() {
       </div>
     );
   }
+
+export default SignupForm

@@ -1,4 +1,4 @@
-export function Dashboard() {
+function Dashboard() {
     return (
       <div className="container mt-5">
         <h2>Dashboard</h2>
@@ -6,3 +6,5 @@ export function Dashboard() {
       </div>
     );
   }
+
+export default Dashboard

@@ -1,7 +1,9 @@
-export function Header() {
+function Header() {
     return (
       <header className="bg-dark text-light p-3">
         <h1>Bug Bounty Platform</h1>
       </header>
     );
   }
+
+export default Header

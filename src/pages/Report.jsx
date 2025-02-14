@@ -1,5 +1,5 @@
 
-export function Report() {
+function Report() {
     return (
       <div className="container mt-5">
         <h2>Report a Vulnerability</h2>
@@ -12,3 +12,5 @@ export function Report() {
       </div>
     );
   }
+
+export default Report

@@ -1,4 +1,4 @@
-export function Home() {
+function Home() {
     return (
       <div className="container mt-5">
         <h2>Welcome to the Bug Bounty Platform</h2>
@@ -7,3 +7,4 @@ export function Home() {
     );
   }
   
+export default Home

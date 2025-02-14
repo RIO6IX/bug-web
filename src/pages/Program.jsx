@@ -6,3 +6,5 @@ export function Program() {
       </div>
     );
   }
+
+export default Program
